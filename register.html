@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Petroleoum System</title>
+      <link rel="stylesheet" href="petroleoumSystem.css" type="text/css">
+      <link rel="stylesheet" href="register.css" type="text/css">
+      <link rel="stylesheet" href="1_responsiveTopNav.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <ul class="topNav">
+        <!-- <li><a class="" href="1_responsiveTopNav.html">Geologi</a></li> -->
+        <li><a href="petroleoumSystem.html" target="_blank">Petroleoum System</a></li>
+        <li><a href="Pernanan_Geologi.pdf">Artikel </a></li>
+        <li class="right"><a href="register.html" target="_blank">Register</a></li>
+
+        <!-- buat login -->
+        <li class="right">
+          <button onclick="document.getElementById('id01').style.display='block'" style="width: auto">Login</button>
+          <div id="id01" class="modal">
+            <form class="modal-content animate" action="" method="POST">
+              <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;
+                  </span>
+                  <img src="./img/img_avatar2.png" alt="Avatar" class="avatar">
+              </div>
+
+              <div class="container">
+                  <label for="unname"><b>Username : </b></label>
+                  <input type="text" placeholder="Enter Username" name="unname" required>
+
+                  <label for="psw"><b>Password :</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button type="submit">Login</button>
+                  <label for="">
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                  </label>
+              </div>
+
+              <div class="container" style="background-color: #f1eeee">
+                  <button type="button" onclick="document.getElementById('id01').style.display = 'none'" class="cancelbtn">Cancel</button>
+                  <span class="forget"><a href="#">Forgot Password?</a></span>
+              </div>
+            </form>
+          </div>
+        </li>
+    </ul>
+
+  <!-- REGISTRATION FORM -->
+  <h2 style="text-align: center">Registration Form</h2>
+  <div class="rContainer">
+    <form action="">
+
+        <div class="rRow">
+          <div class="rCol-25">
+            <label for="fname" class="rFont">Full Name<i> required</i></label>
+          </div>
+          <div class="rCol-75"> 
+            <input type="text" id="fname" name="firstname" placeholder="Please type your full name without abbreviation">
+          </div>
+        </div>
+        
+        <div class="rRow">
+          <div class="rCol-25">
+            <label for="emailAddress" class="rFont">Email Address<i> required</i></label>
+          </div>
+          <div class="rCol-75">
+            <input type="text" name="emailAddress" id="email" placeholder="Please type a valid corporate or organizational email address">
+          </div>
+        </div>
+
+        <div class="rRow">
+          <div class="rCol-25">
+            <label for="address" class="rFont">Address<i> required</i></label>
+          </div>
+          <div class="rCol-75">
+            <input type="text" name="address" id="address" placeholder="Please type your full address">
+          </div>
+        </div>
+
+        <div class="rRow">
+          <div class="rCol-25">
+            <label for="phoneNumber" class="rFont">Phone Number<i> required</i></label>
+          </div>
+          <div class="rCol-75">
+            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Country code and phone number e.g.+6281234567891";>
+          </div>
+        </div>
+
+        <div class="rRow">
+          <div class="rCol-25">
+            <label for="identittyCardNumber" class="rFont">Identitty Card Number<i> required</i></label>
+          </div>
+          <div class="rCol-75">
+            <input type="number" name="identityCardNumber" id="identityCardNumber" placeholder="Numeric Characters Only">
+          </div>
+        </div>
+
+        <div class="rRow"> 
+          <div class="rCol-25">
+            <label for="institutionType" class="rFont">Institution Type<i> required</i></label>
+          </div>
+          <div class="rCol-75">
+            <select name="institutionType" id="institutionType">
+                <option value="pertamina-and-Its-Affiliation">Pertamina and Its Affiliation<i> required</i></option>
+                <option value="government">Government</option>
+                <option value="indonesian-student-in-indonesian-university">Indonesian Student in Indonesian University</option>
+                <option value="indonesian-student-in-foreign-university">Indonesian Student in Foreign University</option>
+                <option value="foreign-student-in-indonesian-university">Foreign Student in Indonesian University</option>
+                <option value="foreign-student-in-foreign-university">foreign Student in Foreign University</option>
+                <option value="lecturer-in-indonesian-university">Lecturer in Indonesian University</option>
+                <option value="lecturer-in-foreign-university">Lecturer in Foreign University</option>
+                <option value="domestic-investor">Domestic Investor</option>
+                <option value="foreign-investor">Foreign Investor</option>
+                <option value="partnership-contract-contractor">Partneship Contract Contractor</option>
+                <option value="private-research-institution">Private Research Institution</option>
+                <option value="consultant">Consultant</option>
+                <option value="foreign-institution">Foregn Institution</option>      
+            </select>
+          </div>
+        </div>
+
+        <div class="rRow">
+          <div class="rCol-25">
+            <label for="institution" class="rFont">Institution<i> required</i></label>
+          </div>
+          <div class="rCol-75">
+            <input type="text" name="institution" id="institution" placeholder="Your Institution">
+          </div>
+        </div>
+
+        <div class="rRow">
+          <div class="rCol-25">
+            <label for="occupation" class="rFont">Occupation<i> required</i></label>
+          </div>
+          <div class="rCol-75">
+            <input type="text" name="occupation" id="occupation" placeholder="Position in the organization, e.g. Manager">
+          </div>
+        </div>
+
+        <div class="rRow">
+            <div class="rCol-25">
+              <label for="nationalIdentityCard" class="rFont">National Identity Card<i> required</i></label>
+            </div>
+            <div class="col-75">
+              <input type="number" name="identityCardNumber" id="identityCardNumber" placeholder="Numeric Characters Only">
+            </div>
+        </div>
+
+        <div class="rRow">
+            <div class="rCol-25">
+              <label for="uploadImage" class="rFont">Upload Scanned Image of National Identity Card<i> required</i></label>
+            </div>
+            <div class="rCol-75">
+              <input type="file" name="Browse"> 
+            </div>
+        </div>
+
+        <div class="rRow">
+            <div class="rCol-25">
+              <label for="uploadImage" class="rFont">Upload Scanned Image of Additional Identity Card Company <i>required</i></label>
+            </div>
+            <div class="rCol-75">
+              <input type="file" name="Browse"> 
+            </div>
+        </div>
+
+        <div class="rRow">
+            <div class="rCol-25">
+              <label for="uploadImage" class="rFont">Upload Scanned Image of Proof of Membership Document</label>
+            </div>
+            <div class="rCol-75">
+              <input type="file" name="Browse"> 
+            </div>
+        </div>
+
+        <!-- last -->
+        <div class="rRow">
+          <input type="submit" value="Register">
+        </div>
+        
+    </form>
+  </div>
+  <footer>
+      <hr class="one">
+      <p>Posted by: Guitherez Mahardika Sinaga</p>
+      <p>Contact Information :
+        <a href="mailto:guitherez.dika@gmail.com" style="color: aqua;">guitherez.dika@gmail.com</a>.
+      </p>
+      <p>Jl. Karet Karya 2 No 19b, Kel. Karet, Kec. Setiabudi Jakarta Selatan</p>
+      <p>Phone : +628122050594</p>
+      <a href="https://web.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+      <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
+      <a href="https://twitter.com/login" target="_blank" class="fa fa-twitter"></a>
+  </footer>
+</body>
+</html>
