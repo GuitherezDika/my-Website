@@ -1,0 +1,152 @@
+body, html {
+    height: 100%;
+  }
+  
+  div {
+    display: block;
+  }
+  
+  .pParallax {
+    background-image: url('./img/petroleum1.jpg');
+    min-height: 100%;
+  }
+  
+  .pParallax, .pParallax2, .pParallax3 {
+    opacity: 0.75;/*membuat gambar hablur 75%*/
+    min-height: 100%;/*gambar display sebagian*/
+    /* parallax scrolling effect */
+    background-attachment: fixed;/*gambar tetap diam walau di scrolling; display gambar sesuai scroll*/;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .pParallax .pCaption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    /* caption berada di tengah */
+  }
+  
+  .pParallax .pCaption span.pBorder {
+    background-color: black;
+    color: aliceblue;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  div.pSentence {
+    /* beda display div .pSentence;p.Sentence/div.pSentence; */
+    height: 270px;
+    background-color: rgb(231, 224, 224);
+    color: rgb(41, 40, 40);
+    /* text-align: center; */
+    text-align: justify;
+    padding: 30px 40px;
+    font-size: 20px;
+  }
+  
+  .pParallax2 {
+    background-image: url('./img/strata.jpg');
+    min-height: 400px;
+  
+  }
+  
+  div.pSentence2 {
+    color: #ddd;
+    height: 480px;
+    background-color: #282E34;
+    text-align: center;
+    padding: 25px 20px ;
+    text-align: justify;
+    font-size: 18px;
+  }
+  
+  div.pSentence3 {
+    color: #ddd;
+    height: 280px;
+    background-color: #282E34;
+    text-align: center;
+    padding: 25px 20px ;
+    text-align: justify;
+    font-size: 18px;
+  }
+  
+  .pParallax3 {
+    background-image: url('./img/fossil.jpg');
+    min-height: 400px;
+  }
+  
+  div.pInner {
+    color: #ddd;
+    height: 480px;
+    background-color: #282E34;
+    text-align: center;
+    padding: 25px 20px ;
+    text-align: justify;
+    font-size: 18px;
+    float: left;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #282E34;
+    padding: 10px;
+    height: 140px;
+    text-align: center;
+    color: rgb(250, 205, 6);
+    font-size: 14px;
+  }
+  
+  .one{
+   border-top: 3px solid rgb(199, 241, 8);
+   width: 100%;
+   margin: 10px;
+  }
+  
+  /* social-media */
+  .fa {
+    padding: 8px;
+    font-size: 25px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 5px;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 5px;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 5px;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    border-radius: 5px;
+  }
+  .fa-twitter {
+    background: #3B5998;
+    color: white;
+    border-radius: 5px;
+  }
+  @media only screen and (max-device-width: 1366px) {
+    .pParallax footer {
+      background-attachment: scroll;/*bila scroll maka akan repeat*/
+    }
+  }
